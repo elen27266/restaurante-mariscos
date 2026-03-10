@@ -2,180 +2,123 @@
 <html lang="es">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Muelle 62 | Restaurante de Mariscos</title>
 
-    <title>Mariscos del Puerto - Mérida</title>
-
+    <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- Animaciones -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 
-<body class="bg-gray-100 font-sans leading-relaxed">
+<body class="bg-gray-50 text-gray-800">
 
-    <!-- HEADER -->
-
-    <header class="bg-teal-700 text-white">
-
+    <!-- NAVBAR -->
+    <header class="bg-white shadow fixed w-full z-50">
         <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
 
-            <h1 class="text-4xl font-bold">
-                Mariscos del Puerto
+            <h1 class="text-2xl font-bold text-teal-700">
+                Restaurante Muelle 62
             </h1>
 
-            <nav id="menu" class="space-x-6 hidden md:block">
-                <a href="#inicio" class="hover:text-yellow-300">Inicio</a>
-                <a href="#menu" class="hover:text-yellow-300">Menú</a>
-                <a href="#galeria" class="hover:text-yellow-300">Galería</a>
-                <a href="#contacto" class="hover:text-yellow-300">Contacto</a>
+            <nav class="space-x-6 hidden md:block">
+                <a href="#inicio" class="hover:text-teal-600">Inicio</a>
+                <a href="#menu" class="hover:text-teal-600">Menú</a>
+                <a href="#galeria" class="hover:text-teal-600">Galería</a>
+                <a href="#ubicacion" class="hover:text-teal-600">Ubicación</a>
+                <a href="#contacto" class="hover:text-teal-600">Contacto</a>
             </nav>
 
-            <button id="menu-btn" class="md:hidden text-2xl">
-                ☰
-            </button>
-
         </div>
-
     </header>
 
     <!-- HERO -->
+    <section id="inicio" class="pt-24">
 
-    <section id="inicio" class="h-[500px] bg-cover bg-center flex items-center justify-center text-white"
-        style="background-image:url('img/restaurante.jpg');">
+        <div class="relative">
 
-        <div class="bg-black/50 p-10 rounded text-center">
+            <img src="img/restaurante.jpg" class="w-full h-[70vh] object-cover">
 
-            <h2 class="text-4xl font-bold mb-4">
-                Los mejores mariscos de Mérida
-            </h2>
+            <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
 
-            <p class="text-lg">
-                Frescura del Golfo de México directo a tu mesa
-            </p>
+                <div class="text-center text-white px-4">
+
+                    <h2 class="text-4xl md:text-5xl font-bold mb-4" data-aos="fade-up">
+                        Muelle 62
+                    </h2>
+
+                    <p class="text-lg md:text-xl mb-6" data-aos="fade-up">
+                        Restaurante de Mariscos en Mérida
+                    </p>
+
+                    <a href="#menu" class="bg-teal-600 px-6 py-3 rounded-lg hover:bg-teal-700 transition">
+                        Ver Menú
+                    </a>
+
+                </div>
+
+            </div>
 
         </div>
 
     </section>
 
     <!-- SOBRE NOSOTROS -->
+    <section class="max-w-6xl mx-auto p-8 text-center">
 
-    <section class="py-16 bg-white">
+        <h2 class="text-3xl font-bold mb-4 text-teal-700" data-aos="fade-up">
+            Sobre Nosotros
+        </h2>
 
-        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center px-6">
-
-            <img src="img/restaurante1.jpg" class="rounded-lg shadow-lg h-72 w-full object-cover">
-
-            <div>
-
-                <h2 class="text-4xl font-bold mb-4">
-                    Sobre nuestro restaurante
-                </h2>
-
-                <p class="text-gray-700 mb-4">
-
-                    Mariscos del Puerto es un restaurante familiar ubicado en el centro
-                    de Mérida, Yucatán. Nos especializamos en preparar platillos de
-                    mariscos frescos con recetas tradicionales de la costa.
-
-                </p>
-
-                <p class="text-gray-700">
-
-                    Nuestros ingredientes llegan diariamente del Golfo de México para
-                    garantizar la mejor calidad y sabor en cada platillo.
-
-                </p>
-
-            </div>
-
-        </div>
+        <p class="max-w-3xl mx-auto text-lg" data-aos="fade-up">
+            En <strong>Muelle 62</strong> nos especializamos en ofrecer mariscos frescos
+            preparados con el auténtico sabor del mar. Nuestro restaurante es el lugar
+            ideal para disfrutar con familia y amigos en un ambiente agradable.
+        </p>
 
     </section>
 
     <!-- MENU -->
+    <section id="menu" class="bg-white py-12">
 
-    <section id="menu" class="py-16 bg-gray-100">
+        <div class="max-w-6xl mx-auto px-6">
 
-        <h2 class="text-4xl font-bold text-center mb-10">
-            Nuestro Menú
-        </h2>
+            <h2 class="text-3xl font-bold text-center mb-10 text-teal-700">
+                Platillos Destacados
+            </h2>
 
-        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 px-6">
+            <div class="grid md:grid-cols-3 gap-8">
 
-            <!-- PLATILLO 1 -->
-
-            <div class="bg-white rounded shadow">
-
-                <img src="img/ceviche.jpg" class="rounded-t h-48 w-full object-cover">
-
-                <div class="p-6">
-
-                    <h3 class="text-xl font-bold">
-                        Ceviche de camarón
-                    </h3>
-
-                    <p class="text-gray-600">
-                        Camarón fresco preparado con limón, tomate,
-                        cebolla y cilantro.
-                    </p>
-
-                    <p class="text-teal-700 font-bold mt-2">
-                        $180 MXN
-                    </p>
-
+                <div class="bg-gray-50 rounded-xl shadow hover:shadow-lg transition" data-aos="zoom-in">
+                    <img src="img/ceviche.jpg" class="rounded-t-xl">
+                    <div class="p-4">
+                        <h3 class="font-bold text-xl">Ceviche Fresco</h3>
+                        <p>Preparado con ingredientes frescos y el auténtico sabor del mar.</p>
+                    </div>
                 </div>
 
-            </div>
-
-
-            <!-- PLATILLO 2 -->
-
-            <div class="bg-white rounded shadow">
-
-                <img src="img/camarones.jpg" class="rounded-t h-48 w-full object-cover">
-
-                <div class="p-6">
-
-                    <h3 class="text-xl font-bold">
-                        Camarones al coco
-                    </h3>
-
-                    <p class="text-gray-600">
-                        Camarones crujientes con coco acompañados
-                        con salsa tropical.
-                    </p>
-
-                    <p class="text-teal-700 font-bold mt-2">
-                        $220 MXN
-                    </p>
-
+                <div class="bg-gray-50 rounded-xl shadow hover:shadow-lg transition" data-aos="zoom-in">
+                    <img src="img/camarones.jpg" class="rounded-t-xl">
+                    <div class="p-4">
+                        <h3 class="font-bold text-xl">Camarones al Gusto</h3>
+                        <p>Camarones preparados con nuestras recetas especiales.</p>
+                    </div>
                 </div>
 
-            </div>
-
-
-            <!-- PLATILLO 3 -->
-
-            <div class="bg-white rounded shadow">
-
-                <img src="img/pulpo.jpg" class="rounded-t h-48 w-full object-cover">
-
-                <div class="p-6">
-
-                    <h3 class="text-xl font-bold">
-                        Pulpo a la parrilla
-                    </h3>
-
-                    <p class="text-gray-600">
-                        Pulpo marinado preparado a la parrilla con
-                        especias especiales.
-                    </p>
-
-                    <p class="text-teal-700 font-bold mt-2">
-                        $260 MXN
-                    </p>
-
+                <div class="bg-gray-50 rounded-xl shadow hover:shadow-lg transition" data-aos="zoom-in">
+                    <img src="img/pulpo.jpg" class="rounded-t-xl">
+                    <div class="p-4">
+                        <h3 class="font-bold text-xl">Pulpo a la Parrilla</h3>
+                        <p>Uno de los favoritos de nuestros clientes.</p>
+                    </div>
                 </div>
 
             </div>
@@ -185,96 +128,112 @@
     </section>
 
     <!-- GALERIA -->
+    <section id="galeria" class="py-12">
 
-    <section id="galeria" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
 
-        <h2 class="text-4xl font-bold text-center mb-10">
-            Galería de platillos
-        </h2>
+            <h2 class="text-3xl font-bold text-center mb-10 text-teal-700">
+                Galería
+            </h2>
 
-        <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-6">
-            <img src="img/galeria1.jpg"
-                class="rounded-lg shadow-lg hover:scale-105 transition h-56 w-full object-cover">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
 
-            <img src="img/ceviche2.jpg"
-                class="rounded-lg shadow-lg hover:scale-105 transition h-56 w-full object-cover">
+                <img src="img/galeria1.jpg" class="w-full h-48 object-cover rounded-lg hover:scale-105 transition">
 
-            <img src="img/camarones1.jpg"
-                class="rounded-lg shadow-lg hover:scale-105 transition h-56 w-full object-cover">
+                <img src="img/galeria2.jpg" class="w-full h-48 object-cover rounded-lg hover:scale-105 transition">
 
-            <img src="img/pulpo.jpg" class="rounded-lg shadow-lg hover:scale-105 transition h-56 w-full object-cover">
+                <img src="img/camarones.jpg" class="w-full h-48 object-cover rounded-lg hover:scale-105 transition">
 
-            <img src="img/galeria2.jpg"
-                class="rounded-lg shadow-lg hover:scale-105 transition h-56 w-full object-cover">
+                <img src="img/ceviche.jpg" class="w-full h-48 object-cover rounded-lg hover:scale-105 transition">
 
-            <img src="img/ceviche.jpg" class="rounded-lg shadow-lg hover:scale-105 transition h-56 w-full object-cover">
+                <img src="img/pulpo.jpg" class="w-full h-48 object-cover rounded-lg hover:scale-105 transition">
+
+                <img src="img/restaurante.jpg" class="w-full h-48 object-cover rounded-lg hover:scale-105 transition">
+
+                <img src="img/galeria1.jpg" class="w-full h-48 object-cover rounded-lg hover:scale-105 transition">
+
+                <img src="img/galeria2.jpg" class="w-full h-48 object-cover rounded-lg hover:scale-105 transition">
+
+            </div>
 
         </div>
 
     </section>
 
-    <!-- CONTACTO -->
+    <!-- UBICACION -->
+    <section id="ubicacion" class="bg-white py-12">
 
-    <section id="contacto" class="py-16 bg-gray-100 text-center">
+        <div class="max-w-6xl mx-auto px-6 text-center">
 
-        <h2 class="text-4xl font-bold mb-6">
-            Visítanos
+            <h2 class="text-3xl font-bold mb-6 text-teal-700">
+                Ubicación
+            </h2>
+
+            <p class="mb-6">
+                C. 62 601-X 27, Pedregales de Caucel<br>
+                Cd Caucel, 97314 Mérida, Yucatán
+            </p>
+
+            <iframe
+                src="https://maps.google.com/maps?q=C.62%20601-X%2027%20Pedregales%20de%20Caucel%20Merida&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                width="100%" height="350" class="rounded-lg border">
+            </iframe>
+
+        </div>
+    </section>
+
+    <!-- HORARIOS -->
+    <section class="py-12 text-center">
+
+        <h2 class="text-3xl font-bold mb-4 text-teal-700">
+            Horarios
         </h2>
 
-        <p class="text-gray-700 mb-2">
-            📍 Calle 60 #245 Centro, Mérida, Yucatán
+        <p class="text-lg">
+            Lunes a Domingo<br>
+            9:00 AM – 11:00 PM
         </p>
 
-        <p class="text-gray-700 mb-2">
-            📞 Teléfono: 999 123 4567
+        <p class="mt-3 text-sm text-gray-500">
+            El horario puede cambiar en días festivos.
         </p>
-
-        <p class="text-gray-700 mb-6">
-            🕒 Lunes a Domingo de 12:00 pm a 10:00 pm
-        </p>
-
-        <a href="https://wa.me/529991234567"
-            class="bg-green-500 text-white px-6 py-3 rounded-lg font-bold hover:bg-green-600">
-
-            Pedir por WhatsApp
-
-        </a>
 
     </section>
 
     <!-- FOOTER -->
-
-    <footer class="bg-gray-900 text-white text-center p-6">
+    <footer id="contacto" class="bg-gray-900 text-white text-center p-6">
 
         <p>
-            © 2026 Mariscos del Puerto - Mérida, Yucatán
+            © 2026 Muelle 62 | Restaurante de Mariscos
+        </p>
+
+        <p class="text-sm text-gray-400">
+            Mérida, Yucatán
         </p>
 
     </footer>
 
+    <!-- BOTON WHATSAPP -->
+    <a href="https://wa.me/529999999999"
+        class="fixed bottom-6 right-6 bg-green-500 p-4 rounded-full shadow-lg hover:bg-green-600 transition">
 
-    <!-- Agregar botón flotante de WhatsApp -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="white" viewBox="0 0 24 24">
 
-<a href="https://wa.me/529991234567"
-class="fixed bottom-6 right-6 bg-green-500 text-white text-2xl p-4 rounded-full shadow-lg hover:bg-green-600">
+            <path
+                d="M20.52 3.48A11.8 11.8 0 0012.02 0C5.39 0 .02 5.37.02 12c0 2.11.55 4.17 1.6 6L0 24l6.22-1.63A11.93 11.93 0 0012.02 24c6.63 0 12-5.37 12-12 0-3.19-1.24-6.19-3.5-8.52z" />
+        </svg>
 
-💬
+    </a>
 
-</a>
+    <!-- SCRIPT ANIMACIONES -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
 
 </body>
-
-<script>
-
-    const btn = document.getElementById("menu-btn");
-    const menu = document.getElementById("menu");
-
-    btn.addEventListener("click", () => {
-        menu.classList.toggle("hidden");
-    });
-
-</script>
-
-
 
 </html>
