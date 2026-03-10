@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mariscos del Puerto - Mérida</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="bg-gray-100 font-sans leading-relaxed">
+
+    <!-- HEADER -->
+
+    <header class="bg-teal-700 text-white">
+
+        <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+
+            <h1 class="text-4xl font-bold">
+                Mariscos del Puerto
+            </h1>
+
+            <nav id="menu" class="space-x-6 hidden md:block">
+                <a href="#inicio" class="hover:text-yellow-300">Inicio</a>
+                <a href="#menu" class="hover:text-yellow-300">Menú</a>
+                <a href="#galeria" class="hover:text-yellow-300">Galería</a>
+                <a href="#contacto" class="hover:text-yellow-300">Contacto</a>
+            </nav>
+
+            <button id="menu-btn" class="md:hidden text-2xl">
+                ☰
+            </button>
+
+        </div>
+
+    </header>
+
+    <!-- HERO -->
+
+    <section id="inicio" class="h-[500px] bg-cover bg-center flex items-center justify-center text-white"
+        style="background-image:url('img/restaurante.jpg');">
+
+        <div class="bg-black/50 p-10 rounded text-center">
+
+            <h2 class="text-4xl font-bold mb-4">
+                Los mejores mariscos de Mérida
+            </h2>
+
+            <p class="text-lg">
+                Frescura del Golfo de México directo a tu mesa
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- SOBRE NOSOTROS -->
+
+    <section class="py-16 bg-white">
+
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center px-6">
+
+            <img src="img/restaurante1.jpg" class="rounded-lg shadow-lg h-72 w-full object-cover">
+
+            <div>
+
+                <h2 class="text-4xl font-bold mb-4">
+                    Sobre nuestro restaurante
+                </h2>
+
+                <p class="text-gray-700 mb-4">
+
+                    Mariscos del Puerto es un restaurante familiar ubicado en el centro
+                    de Mérida, Yucatán. Nos especializamos en preparar platillos de
+                    mariscos frescos con recetas tradicionales de la costa.
+
+                </p>
+
+                <p class="text-gray-700">
+
+                    Nuestros ingredientes llegan diariamente del Golfo de México para
+                    garantizar la mejor calidad y sabor en cada platillo.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- MENU -->
+
+    <section id="menu" class="py-16 bg-gray-100">
+
+        <h2 class="text-4xl font-bold text-center mb-10">
+            Nuestro Menú
+        </h2>
+
+        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 px-6">
+
+            <!-- PLATILLO 1 -->
+
+            <div class="bg-white rounded shadow">
+
+                <img src="img/ceviche.jpg" class="rounded-t h-48 w-full object-cover">
+
+                <div class="p-6">
+
+                    <h3 class="text-xl font-bold">
+                        Ceviche de camarón
+                    </h3>
+
+                    <p class="text-gray-600">
+                        Camarón fresco preparado con limón, tomate,
+                        cebolla y cilantro.
+                    </p>
+
+                    <p class="text-teal-700 font-bold mt-2">
+                        $180 MXN
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- PLATILLO 2 -->
+
+            <div class="bg-white rounded shadow">
+
+                <img src="img/camarones.jpg" class="rounded-t h-48 w-full object-cover">
+
+                <div class="p-6">
+
+                    <h3 class="text-xl font-bold">
+                        Camarones al coco
+                    </h3>
+
+                    <p class="text-gray-600">
+                        Camarones crujientes con coco acompañados
+                        con salsa tropical.
+                    </p>
+
+                    <p class="text-teal-700 font-bold mt-2">
+                        $220 MXN
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- PLATILLO 3 -->
+
+            <div class="bg-white rounded shadow">
+
+                <img src="img/pulpo.jpg" class="rounded-t h-48 w-full object-cover">
+
+                <div class="p-6">
+
+                    <h3 class="text-xl font-bold">
+                        Pulpo a la parrilla
+                    </h3>
+
+                    <p class="text-gray-600">
+                        Pulpo marinado preparado a la parrilla con
+                        especias especiales.
+                    </p>
+
+                    <p class="text-teal-700 font-bold mt-2">
+                        $260 MXN
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- GALERIA -->
+
+    <section id="galeria" class="py-16 bg-white">
+
+        <h2 class="text-4xl font-bold text-center mb-10">
+            Galería de platillos
+        </h2>
+
+        <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-6">
+            <img src="img/galeria1.jpg"
+                class="rounded-lg shadow-lg hover:scale-105 transition h-56 w-full object-cover">
+
+            <img src="img/ceviche2.jpg"
+                class="rounded-lg shadow-lg hover:scale-105 transition h-56 w-full object-cover">
+
+            <img src="img/camarones1.jpg"
+                class="rounded-lg shadow-lg hover:scale-105 transition h-56 w-full object-cover">
+
+            <img src="img/pulpo.jpg" class="rounded-lg shadow-lg hover:scale-105 transition h-56 w-full object-cover">
+
+            <img src="img/galeria2.jpg"
+                class="rounded-lg shadow-lg hover:scale-105 transition h-56 w-full object-cover">
+
+            <img src="img/ceviche.jpg" class="rounded-lg shadow-lg hover:scale-105 transition h-56 w-full object-cover">
+
+        </div>
+
+    </section>
+
+    <!-- CONTACTO -->
+
+    <section id="contacto" class="py-16 bg-gray-100 text-center">
+
+        <h2 class="text-4xl font-bold mb-6">
+            Visítanos
+        </h2>
+
+        <p class="text-gray-700 mb-2">
+            📍 Calle 60 #245 Centro, Mérida, Yucatán
+        </p>
+
+        <p class="text-gray-700 mb-2">
+            📞 Teléfono: 999 123 4567
+        </p>
+
+        <p class="text-gray-700 mb-6">
+            🕒 Lunes a Domingo de 12:00 pm a 10:00 pm
+        </p>
+
+        <a href="https://wa.me/529991234567"
+            class="bg-green-500 text-white px-6 py-3 rounded-lg font-bold hover:bg-green-600">
+
+            Pedir por WhatsApp
+
+        </a>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="bg-gray-900 text-white text-center p-6">
+
+        <p>
+            © 2026 Mariscos del Puerto - Mérida, Yucatán
+        </p>
+
+    </footer>
+
+
+    <!-- Agregar botón flotante de WhatsApp -->
+
+<a href="https://wa.me/529991234567"
+class="fixed bottom-6 right-6 bg-green-500 text-white text-2xl p-4 rounded-full shadow-lg hover:bg-green-600">
+
+💬
+
+</a>
+
+</body>
+
+<script>
+
+    const btn = document.getElementById("menu-btn");
+    const menu = document.getElementById("menu");
+
+    btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+    });
+
+</script>
+
+
+
+</html>
